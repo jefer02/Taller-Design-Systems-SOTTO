@@ -1,0 +1,153 @@
+{
+  "$description": "Nivel 1 · Tokens globales. Valores crudos, sin significado de UI. Espejo de Primitives/Space/Radii/Motion/Layout en lib/core/design/tokens.dart.",
+  "color": {
+    "graphite": {
+      "$description": "Neutro cálido · h 76°. Escala invertida: 950 es el más oscuro. Los pasos intermedios (25, 75, 150, 320, 350, 550, 575, 825, 875) cubren valores de los dos temas.",
+      "25":  { "$value": "#F2EFE9", "$type": "color" },
+      "50":  { "$value": "#F9F7F5", "$type": "color" },
+      "75":  { "$value": "#F2F0ED", "$type": "color" },
+      "100": { "$value": "#ECE9E5", "$type": "color" },
+      "150": { "$value": "#E8E6E2", "$type": "color" },
+      "200": { "$value": "#DAD7D2", "$type": "color" },
+      "300": { "$value": "#BDBAB5", "$type": "color" },
+      "320": { "$value": "#BAB5AE", "$type": "color" },
+      "350": { "$value": "#ABA7A2", "$type": "color" },
+      "400": { "$value": "#928D86", "$type": "color" },
+      "500": { "$value": "#6D6862", "$type": "color" },
+      "550": { "$value": "#5B5753", "$type": "color" },
+      "575": { "$value": "#544F49", "$type": "color" },
+      "600": { "$value": "#423F3C", "$type": "color" },
+      "700": { "$value": "#2F2C29", "$type": "color" },
+      "800": { "$value": "#24221F", "$type": "color" },
+      "825": { "$value": "#22201E", "$type": "color" },
+      "850": { "$value": "#1A1816", "$type": "color" },
+      "875": { "$value": "#1C1916", "$type": "color" },
+      "900": { "$value": "#131210", "$type": "color" },
+      "950": { "$value": "#0D0C0A", "$type": "color" }
+    },
+    "tungsten": {
+      "$description": "Acento ámbar · h 72° — 'marca dónde estás' (cue).",
+      "300": { "$value": "#F4B55C", "$type": "color" },
+      "350": { "$value": "#F5B658", "$type": "color" },
+      "400": { "$value": "#F3AA40", "$type": "color" },
+      "450": { "$value": "#E39A33", "$type": "color" },
+      "500": { "$value": "#E79E45", "$type": "color" },
+      "600": { "$value": "#F7C173", "$type": "color" },
+      "700": { "$value": "#975407", "$type": "color" },
+      "950": { "$value": "#251807", "$type": "color" }
+    },
+    "tally": {
+      "$description": "Rojo · h 29° — 'el micrófono está capturando'.",
+      "400": { "$value": "#F96050", "$type": "color" },
+      "600": { "$value": "#D22F25", "$type": "color" },
+      "650": { "$value": "#CC291F", "$type": "color" }
+    },
+    "go": {
+      "$description": "Verde · h 158° — 'confirma, nunca celebra'.",
+      "300": { "$value": "#68CE97", "$type": "color" },
+      "600": { "$value": "#10764A", "$type": "color" }
+    },
+    "alpha": {
+      "warm-4":   { "$value": "rgba(255, 244, 230, 0.045)", "$type": "color" },
+      "warm-8":   { "$value": "rgba(255, 244, 230, 0.08)",  "$type": "color" },
+      "warm-9":   { "$value": "rgba(255, 244, 230, 0.09)",  "$type": "color" },
+      "ink-4":    { "$value": "rgba(28, 25, 22, 0.04)",     "$type": "color" },
+      "ink-8":    { "$value": "rgba(28, 25, 22, 0.08)",     "$type": "color" },
+      "black-70": { "$value": "rgba(0, 0, 0, 0.70)",        "$type": "color" }
+    },
+    "white": { "$value": "#FFFFFF", "$type": "color" }
+  },
+  "spacing": {
+    "$description": "spacing-n = n × 4 px. 8 / 16 / 24 hacen el 80 % del trabajo.",
+    "0-5": { "$value": "2px",  "$type": "dimension" },
+    "1":   { "$value": "4px",  "$type": "dimension" },
+    "1-5": { "$value": "6px",  "$type": "dimension" },
+    "2":   { "$value": "8px",  "$type": "dimension" },
+    "3":   { "$value": "12px", "$type": "dimension" },
+    "4":   { "$value": "16px", "$type": "dimension" },
+    "5":   { "$value": "20px", "$type": "dimension" },
+    "6":   { "$value": "24px", "$type": "dimension" },
+    "8":   { "$value": "32px", "$type": "dimension" },
+    "10":  { "$value": "40px", "$type": "dimension" },
+    "12":  { "$value": "48px", "$type": "dimension" },
+    "16":  { "$value": "64px", "$type": "dimension" },
+    "20":  { "$value": "80px", "$type": "dimension" }
+  },
+  "radius": {
+    "xs":      { "$value": "4px",  "$type": "dimension" },
+    "s":       { "$value": "6px",  "$type": "dimension" },
+    "control": { "$value": "7px",  "$type": "dimension" },
+    "m":       { "$value": "8px",  "$type": "dimension" },
+    "l":       { "$value": "12px", "$type": "dimension" },
+    "xl":      { "$value": "16px", "$type": "dimension" },
+    "full":    { "$value": "999px", "$type": "dimension" }
+  },
+  "font": {
+    "family": {
+      "interface": { "$value": "'Geist', system-ui, sans-serif",                    "$type": "fontFamily" },
+      "reading":   { "$value": "'Atkinson Hyperlegible Next', system-ui, sans-serif", "$type": "fontFamily" },
+      "mono":      { "$value": "'Geist Mono', ui-monospace, monospace",              "$type": "fontFamily" }
+    },
+    "size": {
+      "10": { "$value": "10px", "$type": "dimension" },
+      "11": { "$value": "11px", "$type": "dimension" },
+      "12": { "$value": "12px", "$type": "dimension" },
+      "13": { "$value": "13px", "$type": "dimension" },
+      "14": { "$value": "14px", "$type": "dimension" },
+      "17": { "$value": "17px", "$type": "dimension" },
+      "22": { "$value": "22px", "$type": "dimension" },
+      "32": { "$value": "32px", "$type": "dimension" }
+    },
+    "weight": {
+      "regular":  { "$value": 400, "$type": "fontWeight" },
+      "medium":   { "$value": 500, "$type": "fontWeight" },
+      "semibold": { "$value": 600, "$type": "fontWeight" }
+    },
+    "lineHeight": {
+      "14": { "$value": "14px", "$type": "dimension" },
+      "16": { "$value": "16px", "$type": "dimension" },
+      "20": { "$value": "20px", "$type": "dimension" },
+      "24": { "$value": "24px", "$type": "dimension" },
+      "28": { "$value": "28px", "$type": "dimension" },
+      "36": { "$value": "36px", "$type": "dimension" }
+    },
+    "tracking": {
+      "tight-3": { "$value": "-0.032em", "$type": "dimension" },
+      "tight-2": { "$value": "-0.022em", "$type": "dimension" },
+      "tight-1": { "$value": "-0.016em", "$type": "dimension" },
+      "tight-0": { "$value": "-0.006em", "$type": "dimension" },
+      "none":    { "$value": "0em",      "$type": "dimension" },
+      "wide":    { "$value": "0.01em",   "$type": "dimension" }
+    }
+  },
+  "duration": {
+    "instant": { "$value": "0ms",   "$type": "duration" },
+    "quick":   { "$value": "90ms",  "$type": "duration" },
+    "snappy":  { "$value": "160ms", "$type": "duration" },
+    "smooth":  { "$value": "240ms", "$type": "duration" },
+    "glide":   { "$value": "420ms", "$type": "duration" },
+    "settle":  { "$value": "560ms", "$type": "duration" }
+  },
+  "easing": {
+    "enter": { "$value": "cubic-bezier(0.22, 1, 0.36, 1)", "$type": "cubicBezier" },
+    "move":  { "$value": "cubic-bezier(0.65, 0, 0.35, 1)", "$type": "cubicBezier" },
+    "exit":  { "$value": "cubic-bezier(0.55, 0, 1, 0.45)", "$type": "cubicBezier" }
+  },
+  "size": {
+    "sidebar":           { "$value": "240px", "$type": "dimension" },
+    "sidebar-collapsed": { "$value": "56px",  "$type": "dimension" },
+    "inspector-min":     { "$value": "360px", "$type": "dimension" },
+    "inspector-max":     { "$value": "400px", "$type": "dimension" },
+    "content-margin":    { "$value": "40px",  "$type": "dimension" },
+    "title-bar":         { "$value": "52px",  "$type": "dimension" },
+    "control-height":    { "$value": "32px",  "$type": "dimension" },
+    "control-height-s":  { "$value": "26px",  "$type": "dimension" },
+    "icon":              { "$value": "16px",  "$type": "dimension" },
+    "window-min-w":      { "$value": "960px", "$type": "dimension" },
+    "window-min-h":      { "$value": "600px", "$type": "dimension" }
+  },
+  "shadow": {
+    "float": { "$value": "0 12px 32px -8px rgba(0, 0, 0, 0.55)", "$type": "shadow" },
+    "overlay": { "$value": "0 28px 70px -18px rgba(0, 0, 0, 0.70)", "$type": "shadow" }
+  }
+}

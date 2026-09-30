@@ -1,0 +1,77 @@
+{
+  "$description": "Nivel 3 · Tokens de componente. Solo referencian tokens semánticos (o globales de dimensión). Nunca valores crudos de color.",
+  "button": {
+    "height":  { "$value": "{size.control-height}" },
+    "height-s": { "$value": "{size.control-height-s}" },
+    "radius":  { "$value": "{corner.control}" },
+    "padding-x": { "$value": "{space.inset.control}" },
+    "text":    { "$value": "{text.body-strong.size}" },
+    "primary": {
+      "bg":      { "default": { "$value": "{color.signal.cue}" }, "hover": { "$value": "{color.signal.cue-hover}" }, "pressed": { "$value": "{color.signal.cue-pressed}" }, "disabled": { "$value": "{color.line.control}" } },
+      "fg":      { "default": { "$value": "{color.signal.on-cue}" }, "disabled": { "$value": "{color.ink.disabled}" } },
+      "border":  { "default": { "$value": "transparent" } }
+    },
+    "secondary": {
+      "bg":      { "default": { "$value": "{color.surface.raised}" }, "hover": { "$value": "{color.surface.float}" }, "pressed": { "$value": "{color.line.control}" }, "disabled": { "$value": "{color.surface.raised}" } },
+      "fg":      { "default": { "$value": "{color.ink.primary}" }, "disabled": { "$value": "{color.ink.disabled}" } },
+      "border":  { "default": { "$value": "{color.line.control}" }, "hover": { "$value": "{color.line.emphasis}" } }
+    },
+    "ghost": {
+      "bg":      { "default": { "$value": "transparent" }, "hover": { "$value": "{color.wash.hover}" }, "pressed": { "$value": "{color.wash.press}" } },
+      "fg":      { "default": { "$value": "{color.ink.secondary}" }, "hover": { "$value": "{color.ink.primary}" }, "disabled": { "$value": "{color.ink.disabled}" } },
+      "border":  { "default": { "$value": "transparent" } }
+    },
+    "focus-ring": { "$value": "{color.focus-ring}" }
+  },
+  "input": {
+    "height":  { "$value": "{size.control-height}" },
+    "radius":  { "$value": "{corner.control}" },
+    "padding-x": { "$value": "{space.inset.control}" },
+    "bg":      { "default": { "$value": "{color.surface.ground}" }, "disabled": { "$value": "{color.surface.panel}" } },
+    "fg":      { "default": { "$value": "{color.ink.primary}" }, "placeholder": { "$value": "{color.ink.tertiary}" }, "disabled": { "$value": "{color.ink.disabled}" } },
+    "border":  { "default": { "$value": "{color.line.control}" }, "hover": { "$value": "{color.line.emphasis}" }, "focus": { "$value": "{color.focus-ring}" }, "error": { "$value": "{color.signal.live-capture}" } }
+  },
+  "chip": {
+    "radius": { "$value": "{corner.chip}" },
+    "bg":     { "default": { "$value": "{color.surface.float}" }, "cue": { "$value": "{color.wash.press}" } },
+    "fg":     { "default": { "$value": "{color.ink.secondary}" }, "cue": { "$value": "{color.signal.cue-text}" }, "confirmed": { "$value": "{color.signal.confirmed}" }, "live": { "$value": "{color.signal.live-capture}" } }
+  },
+  "card": {
+    "radius":  { "$value": "{corner.card}" },
+    "padding": { "$value": "{space.inset.card}" },
+    "bg":      { "default": { "$value": "{color.surface.raised}" }, "hover": { "$value": "{color.surface.float}" } },
+    "border":  { "default": { "$value": "{color.line.hairline}" }, "hover": { "$value": "{color.line.control}" } }
+  },
+  "nav": {
+    "sidebar": {
+      "width":     { "$value": "{size.sidebar}" },
+      "width-collapsed": { "$value": "{size.sidebar-collapsed}" },
+      "bg":        { "$value": "{color.surface.panel}" },
+      "border":    { "$value": "{color.line.hairline}" }
+    },
+    "item": {
+      "height":    { "$value": "{size.control-height}" },
+      "radius":    { "$value": "{corner.menu}" },
+      "fg":        { "default": { "$value": "{color.ink.secondary}" }, "active": { "$value": "{color.ink.primary}" } },
+      "bg":        { "hover": { "$value": "{color.wash.hover}" }, "active": { "$value": "{color.wash.press}" } },
+      "indicator": { "$value": "{color.signal.cue}" }
+    },
+    "topbar": { "height": { "$value": "{size.title-bar}" }, "bg": { "$value": "{color.surface.ground}" }, "border": { "$value": "{color.line.hairline}" } },
+    "tab": { "fg": { "default": { "$value": "{color.ink.tertiary}" }, "active": { "$value": "{color.ink.primary}" } }, "indicator": { "$value": "{color.signal.cue}" } },
+    "breadcrumb": { "fg": { "default": { "$value": "{color.ink.tertiary}" }, "current": { "$value": "{color.ink.primary}" } } }
+  },
+  "table": {
+    "bg":         { "$value": "{color.surface.raised}" },
+    "header-fg":  { "$value": "{color.ink.tertiary}" },
+    "row-height": { "$value": "{size.control-height}" },
+    "row-hover":  { "$value": "{color.wash.hover}" },
+    "divider":    { "$value": "{color.line.hairline}" },
+    "radius":     { "$value": "{corner.card}" }
+  },
+  "keycap": {
+    "bg":     { "$value": "{color.surface.float}" },
+    "fg":     { "$value": "{color.ink.secondary}" },
+    "border": { "$value": "{color.line.control}" },
+    "radius": { "$value": "{corner.chip}" }
+  }
+}
